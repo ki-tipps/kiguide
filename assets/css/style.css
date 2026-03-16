@@ -152,6 +152,23 @@ section h2 {
     box-shadow: 0 5px 20px rgba(108, 92, 231, 0.4);
 }
 
+.btn-affiliate {
+    display: inline-block;
+    background: linear-gradient(135deg, #00b894, #00cec9);
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin-left: 10px;
+    transition: all 0.3s;
+}
+
+.btn-affiliate:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 184, 148, 0.4);
+}
+
 /* Newsletter */
 .cta {
     background: linear-gradient(135deg, #1a1a3e, #2d1b69);
