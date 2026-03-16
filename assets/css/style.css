@@ -1,1 +1,244 @@
-body {\n    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n    margin: 0;\n    padding: 0;\n    background-color: #f8f9fa;\n    color: #333;\n}\n\nh1, h2, h3 {\n    color: #2c3e50;\n}\n\nheader {\n    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n    color: white;\n    text-align: center;\n    padding: 50px 20px;\n}\n\nnav ul {\n    display: flex;\n    justify-content: center;\n    background: #2c3e50;\n    padding: 10px;\n    margin: 20px 0;\n}\n\nnav ul li {\n    margin: 0 15px;\n}\n\nnav ul li a {\n    color: white;\n    text-decoration: none;\n    font-weight: bold;\n}\n\nnav ul li a:hover {\n    color: #3498db;\n}\n\nmain {\n    max-width: 1000px;\n    margin: 0 auto;\n    padding: 40px 20px;\n}\n\nmain section {\n    margin-bottom: 60px;\n}\n\nmain section h2 {\n    border-bottom: 2px solid #eee;\n    padding-bottom: 10px;\n    color: #2c3e50;\n}\n\nmain ul {\n    padding-left: 20px;\n}\n\nmain li {\n    margin-bottom: 12px;\n}\n\nmain a {\n    color: #3498db;\n    text-decoration: none;\n    font-weight: 600;\n}\n\nmain a:hover {\n    text-decoration: underline;\n}\n\nfooter {\n    text-align: center;\n    padding: 30px;\n    background: #34495e;\n    color: white;\n    margin-top: 60px;\n}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0a0a1a;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #1a1a3e 0%, #2d1b69 100%);
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 3px solid #6c5ce7;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.2em;
+    color: #a29bfe;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.1);
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    background: #6c5ce7;
+    transform: translateY(-2px);
+}
+
+/* Main */
+main {
+    padding: 40px 0;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 30px;
+    background: rgba(108, 92, 231, 0.1);
+    border-radius: 15px;
+}
+
+.intro h2 {
+    color: #a29bfe;
+    margin-bottom: 15px;
+}
+
+/* Sections */
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.section-desc {
+    color: #a29bfe;
+    margin-bottom: 25px;
+    font-size: 1.1em;
+}
+
+/* Tool Cards */
+.tool-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    border-color: #6c5ce7;
+    box-shadow: 0 10px 30px rgba(108, 92, 231, 0.2);
+}
+
+.tool-card h3 {
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.price {
+    color: #00b894;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tool-card p {
+    margin-bottom: 15px;
+}
+
+.features {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.features li {
+    padding: 5px 0;
+    color: #dfe6e9;
+}
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(108, 92, 231, 0.4);
+}
+
+/* Newsletter */
+.cta {
+    background: linear-gradient(135deg, #1a1a3e, #2d1b69);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.cta h2 {
+    margin-bottom: 15px;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.newsletter-form input {
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: 1px solid #6c5ce7;
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    font-size: 1em;
+    width: 300px;
+}
+
+.newsletter-form button {
+    padding: 12px 30px;
+    border-radius: 25px;
+    border: none;
+    background: #6c5ce7;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.newsletter-form button:hover {
+    background: #a29bfe;
+}
+
+.disclaimer {
+    font-size: 0.9em;
+    color: #a29bfe;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background: #0a0a1a;
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+footer a {
+    color: #a29bfe;
+    text-decoration: none;
+}
+
+.affiliate-disclosure {
+    font-size: 0.8em;
+    color: #636e72;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .newsletter-form input {
+        width: 100%;
+    }
+    
+    section h2 {
+        font-size: 1.5em;
+    }
+}
